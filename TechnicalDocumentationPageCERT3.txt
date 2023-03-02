@@ -1,0 +1,158 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+       <nav id="navbar">
+        <header>HTML Navigator</header>
+        <ul>
+       <li><a class="nav-link" href="#What_is_HTML?">What is HTML?</a></li>
+        <li><a class="nav-link"  href="#Anatomy_of_HTML">Anatomy of HTML</a></li>
+        <li><a class="nav-link" href="#Text_Markup">Text Markup</a></li>
+        <li><a class="nav-link" href="#Links">Links</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+        </nav>
+
+      <main id="main-doc">
+
+        <section class="main-section" id="What_is_HTML?">
+          <header>What is HTML?</header>
+          <p>HyperText Markup Language <i><u>(HTML)</i></u> is the code that is used to structure a web page and content inside. Content could be structured within a section of paragraphs, a list of bullet points, or images and data tables.</p>
+          <p>HTML possesses an array of elements, used to enclose or wrap different pieces of content to make it act or appear a certain way.</p>
+          <code>
+         EXAMPLES: <p>("Hello World");</p>
+        </code>
+        <code>
+        <p>img src="" alt="My test image"</p>
+        </code>
+
+          <ul>
+            <li>Enclosing tags have the ability to make an image or word hyperlink somewhere else, italicize words, or even change the font size.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Anatomy_of_HTML">
+          <header>Anatomy of HTML</header>
+          <p>The main factors of an element consists of:</p>
+          <ol>
+            <li><strong>Opening tag</strong>: The name of the element wrapped in opening and closing angle brackets. This confirms where the element begins or starts to take effect.</li>
+            <li><strong>Closing tag</strong>: Similar to the opening tag, this includes a forward slash <i>( / )</i> before the element name. This confirms where the end of the element. Without adding a closing tag, your code will lead to messy results.</li>
+            <li><strong>Content</strong>: Content of the element.</li>
+            <li><strong>Element</strong>: The opening and closing tag, combibed with the content inside the tags is what creates a fucntioning element.</li>
+            </ol>
+        </section>
+
+        <section class="main-section" id="Text_Markup">
+          <header>Text Markup</header>
+          <p>Headings, paragraphs, and lists are commonly used as markup methods within the text.</p>
+          <ul>
+            <li><strong>Headings</strong>: Heading elements allow specification to specific parts of your content headings and/or subheadings. HTML consists of 6 heading levels, h1-h6 , although usually only h3-h4 are used</li>
+            <li><strong>Paragraphs</strong>: Paragraph elements <i>(p)</i> are used for containing paragraphs of text; These are utilized when marking up basic text content</li>
+            <li><strong>Lists</strong>: Most of the web's content contains lists. Marking up lists always possesses at least 2 elements; ordered and unordered lists
+            <p>Unordered lists are lists where the order of the items doesn't matter, such as a grocery list.</p>
+            <code>
+              EXAMPLE:
+              <p>*ul*</p>
+              </code>
+            <p>Ordered lists are lists where the order of the items does matter, such as a construction manual.</p>
+            <code>
+              EXAMPLE:
+              <p>*ol*</p>
+              </code>
+            </li>
+          </ul>
+        </section>
+
+        <section class="main-section" id="Links">
+          <header>Links</header>
+          <p>Links are key to the worldwide web; they are what makes the web function accordingly. Adding a link is simple, all you need to add is a simple element —> <i>(a)</i>; The short form for "anchor".</p>
+          <p>That's not all you may need, though. Adding an <i>(href)</i> attribute, AKA Hypertext reference, will refer your link to the respective web you'd like to relocate the link to! </p>
+          <code>
+            EXAMPLE:
+            *a href=""*
+            </code>
+        </section>
+
+        <section class="main-section" id="Reference">
+          <header>Reference</header>
+          <ul>
+            <li>All documentation from this page was inspired by <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" alt="MDN">MDN HTML Basics</li></a>
+            </ul>
+        </section>
+      </main>
+    </body>
+    </html>
+
+** end of undefined **
+
+** start of undefined **
+
+html, body{
+  line-height: 1.7;
+  background-color: rgba(0,0,0, 0.03)
+}
+nav header{
+font-size: 28px;
+font-weight: bold;
+color: rgba(0,0,0, .75);
+text-align: center;
+text-decoration: underline;
+}
+#navbar{
+display: block;
+text-align: left;
+position: fixed;
+min-width: 290px;
+width: 300px;
+height: 100%;
+border-right: solid;
+border-width: 5px;
+font-weight: bold;
+}
+#navbar li{
+  list-style: none;
+  margin-right: 5px;
+  margin-top: 20px;
+  padding: 5px 1px;
+  border: solid;
+  border-width: 5px;
+  border-radius: 10%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20;
+
+}
+#navbar ul{
+  padding: 0;
+  line-height: 5;
+}
+#navbar a {
+text-decoration: none;
+color: rgba(0,0,0, .7);
+cursor: pointer;
+}
+.main-section header{
+  font-size: 28px;
+  font-weight: bold;
+}
+.main-section{
+    margin-left: 320px;
+    padding: 5px;
+}
+li{
+  padding: 0 auto;
+}
+p{
+  padding: 1px 5px;
+}
+@media (orientation: landscape) {
+}
+
+** end of undefined **
+
